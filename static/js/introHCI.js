@@ -2,9 +2,9 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-	initializePage();
+  initializePage();
 })
-
+//
 function projectClick(e) { 
     // prevent the page from reloading 
     e.preventDefault();
@@ -24,17 +24,17 @@ function projectClick(e) { 
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript has taken control");
-		$("#testjs").text("Please wait...");
-		$(".jumbotron p").toggleClass("active");
-	});
+  $("#testjs").click(function(e) {
+    $('.jumbotron h1').text("Javascript has taken control");
+    $("#testjs").text("Please wait...");
+    $(".jumbotron p").toggleClass("active");
+  });
 
-	// Add any additional listeners here
-	// example: $("#div-id").click(functionToCall);
+  // Add any additional listeners here
+  // example: $("#div-id").click(functionToCall);
 
-	$("a.thumbnail").click(projectClick);
-	$("#submitBtn").click(updateProject); 
+  $("a.thumbnail").click(projectClick);
+  $("#submitBtn").click(updateProject); 
 }
 
 function updateProject(e) {
